@@ -1,0 +1,27 @@
+<!--- 10. Write a JavaScript program to remove all vowels from a given string.--->
+<html>
+
+<head>
+    <title>Removed Vowels</title>
+</head>
+
+<body>
+    <script>
+        let str = "Hello World";
+        let result = "";
+
+        // Loop through each character
+        for (let i = 0; i < str.length; i++) {
+            let ch = str[i].toLowerCase(); // Convert to lowercase for easy checking
+            if (ch !== 'a' && ch !== 'e' && ch !== 'i' && ch !== 'o' && ch !== 'u') {
+                result += str[i]; // Add only non-vowel characters
+            }
+        }
+
+        console.log("Original String: " + str);
+        console.log("String without vowels: " + result);
+
+    </script>
+</body>
+
+</html>
